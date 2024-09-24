@@ -64,7 +64,24 @@
       <a target="_blank" href="https://github.com/thalisantos"><img class="rede" src="src/github.png" alt="github"></a>
     </div>
   </div>
-  </div>
+
+  <!-- Script para alterar o texto -->
+  <script>
+    window.onload = function () {
+      // Selecionar o parágrafo com o ID 'username'
+      var a = document.getElementById('username');
+
+      // Verificar se o elemento foi encontrado e se o texto contém '@thalitas4ntos'
+      if (a && a.textContent.includes('@thalitas4ntos')) {
+        console.log("Texto encontrado, realizando o replace...");
+        // Alterar o texto para "Alterei aqui"
+        a.textContent = a.textContent.replace('@thalitas4ntos', 'Alterei aqui');
+      } else {
+        console.log("Texto não encontrado ou parágrafo não existe.");
+      }
+    };
+  </script>
+
 </body>
 
 </html>
